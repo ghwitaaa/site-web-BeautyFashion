@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Beauty & Fashion Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Beauty & Fashion</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link active">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Header -->
+    <section class="products-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Discover our amazing collection of beauty and fashion products</p>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <section class="category-nav">
+        <div class="container">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="nails">Nails</button>
+                <button class="category-btn" data-category="hair">Hair Care</button>
+                <button class="category-btn" data-category="makeup">Makeup</button>
+                <button class="category-btn" data-category="clothes">Fashion</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <!-- Nails Category -->
+            <div class="product-category" id="nails">
+                <h2>Nail Products</h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="nails">
+                        <div class="product-image nails-bg">
+                            <span>💅</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gel Nail Polish Set</h3>
+                            <p>Professional gel polish in 6 stunning colors</p>
+                            <div class="product-price">$24.99</div>
+                            <button class="add-to-cart" data-name="Gel Nail Polish Set" data-price="24.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="nails">
+                        <div class="product-image nails-bg">
+                            <span>✨</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Nail Art Kit</h3>
+                            <p>Complete kit with brushes, gems, and stickers</p>
+                            <div class="product-price">$18.50</div>
+                            <button class="add-to-cart" data-name="Nail Art Kit" data-price="18.50">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="nails">
+                        <div class="product-image nails-bg">
+                            <span>🌟</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Nail Care Set</h3>
+                            <p>Cuticle oil, file, and strengthening treatment</p>
+                            <div class="product-price">$15.99</div>
+                            <button class="add-to-cart" data-name="Nail Care Set" data-price="15.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hair Care Category -->
+            <div class="product-category" id="hair">
+                <h2>Hair Care Products</h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="hair">
+                        <div class="product-image hair-bg">
+                            <span>💇‍♀️</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Professional Hair Dryer</h3>
+                            <p>Ionic hair dryer with multiple heat settings</p>
+                            <div class="product-price">$89.99</div>
+                            <button class="add-to-cart" data-name="Professional Hair Dryer" data-price="89.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="hair">
+                        <div class="product-image hair-bg">
+                            <span>🧴</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Hydrating Shampoo</h3>
+                            <p>Moisturizing shampoo for all hair types</p>
+                            <div class="product-price">$22.99</div>
+                            <button class="add-to-cart" data-name="Hydrating Shampoo" data-price="22.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="hair">
+                        <div class="product-image hair-bg">
+                            <span>💆‍♀️</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Hair Styling Kit</h3>
+                            <p>Curling iron, straightener, and heat protectant</p>
+                            <div class="product-price">$45.99</div>
+                            <button class="add-to-cart" data-name="Hair Styling Kit" data-price="45.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Makeup Category -->
+            <div class="product-category" id="makeup">
+                <h2>Makeup Collection</h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="makeup">
+                        <div class="product-image makeup-bg">
+                            <span>💄</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Luxury Lipstick Set</h3>
+                            <p>Long-lasting lipsticks in 8 beautiful shades</p>
+                            <div class="product-price">$34.99</div>
+                            <button class="add-to-cart" data-name="Luxury Lipstick Set" data-price="34.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="makeup">
+                        <div class="product-image makeup-bg">
+                            <span>👁️</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Eyeshadow Palette</h3>
+                            <p>18 highly pigmented eyeshadow colors</p>
+                            <div class="product-price">$28.50</div>
+                            <button class="add-to-cart" data-name="Eyeshadow Palette" data-price="28.50">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="makeup">
+                        <div class="product-image makeup-bg">
+                            <span>🎨</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Foundation & Concealer</h3>
+                            <p>Full coverage foundation with matching concealer</p>
+                            <div class="product-price">$32.99</div>
+                            <button class="add-to-cart" data-name="Foundation & Concealer" data-price="32.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fashion Category -->
+            <div class="product-category" id="clothes">
+                <h2>Fashion Collection</h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="clothes">
+                        <div class="product-image clothes-bg">
+                            <span>👗</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Summer Dress</h3>
+                            <p>Elegant floral print dress perfect for any occasion</p>
+                            <div class="product-price">$65.99</div>
+                            <button class="add-to-cart" data-name="Summer Dress" data-price="65.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="clothes">
+                        <div class="product-image clothes-bg">
+                            <span>👚</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Casual Blouse</h3>
+                            <p>Comfortable and stylish blouse for everyday wear</p>
+                            <div class="product-price">$42.50</div>
+                            <button class="add-to-cart" data-name="Casual Blouse" data-price="42.50">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="clothes">
+                        <div class="product-image clothes-bg">
+                            <span>👜</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Designer Handbag</h3>
+                            <p>Luxury leather handbag with gold hardware</p>
+                            <div class="product-price">$129.99</div>
+                            <button class="add-to-cart" data-name="Designer Handbag" data-price="129.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty & Fashion</h3>
+                    <p>Your destination for beauty and style.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@beautyfashion.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beauty & Fashion Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
